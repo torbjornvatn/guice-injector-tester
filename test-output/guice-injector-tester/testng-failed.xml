@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="5" skipfailedinvocationCounts="false" verbose="1" name="Failed suite [guice-injector-tester]" junit="false" annotations="JDK">
+  <test name="no.bekk.guice.InjectionTest(failed)" junit="false" annotations="JDK">
+    <classes>
+      <class name="no.bekk.guice.InjectionTest">
+        <methods>
+          <include name="shouldInjectDefinedBinding"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+</suite>

@@ -1,0 +1,4 @@
+= Guice Injector Tester
+
+== DESCRIPTION 
+	TestNG based tester that tests injections performed by Google Guice

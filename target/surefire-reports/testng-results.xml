@@ -1,0 +1,53 @@
+<testng-results>
+  <reporter-output>
+  </reporter-output>
+  <suite name="Command line suite">
+    <groups>
+    </groups>
+    <test name="Command line test">
+      <class name="no.bekk.guice.InjectionTest">
+        <test-method status="FAIL" signature="shouldInjectDefinedBinding()" name="shouldInjectDefinedBinding" duration-ms="13" started-at="2008-06-26T19:59:55Z" finished-at="2008-06-26T19:59:55Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.google.inject.AbstractModule.bind(AbstractModule.java:112)
+	at no.bekk.guice.TestingModule.configure(TestingModule.java:12)
+	at no.bekk.guice.TestingModule.inject(TestingModule.java:17)
+	at no.bekk.guice.InjectionTest.shouldInjectDefinedBinding(InjectionTest.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:580)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:478)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:617)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:885)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:712)
+	at org.testng.TestRunner.privateRun(TestRunner.java:582)
+	at org.testng.TestRunner.run(TestRunner.java:477)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:324)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:292)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:198)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:821)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:788)
+	at org.testng.TestNG.run(TestNG.java:708)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:62)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:141)
+	at org.apache.maven.surefire.Surefire.run(Surefire.java:177)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:345)
+	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:1009)
+]]>
+            </full-stacktrace>
+          </exception>
+        </test-method>
+      </class>
+    </test>
+  </suite>
+</testng-results>
