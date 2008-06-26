@@ -1,8 +1,0 @@
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="guice-injector-tester">
-  <test verbose="2" name="no.bekk.guice.InjectionTest" annotations="JDK">
-    <classes>
-      <class name="no.bekk.guice.InjectionTest"/>
-    </classes>
-  </test>
-</suite>
