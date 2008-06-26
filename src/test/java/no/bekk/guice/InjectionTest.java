@@ -1,14 +1,15 @@
 package no.bekk.guice;
 
-import org.testng.Assert;
+import static org.testng.Assert.assertEquals;
+
 import org.testng.annotations.Test;
 
 public class InjectionTest {
 	
 	@Test
 	public void shouldInjectDefinedBinding() {
-		BindableClass injectionStartPoint = TestingModule.inject().getInstance(ClassToBind.class);
-		Assert.assertEquals(injectionStartPoint.toString().trim(), "one two three");
+		InjectionStartPoint injectionStartPoint = new InjectionStartPoint();
+		assertEquals(injectionStartPoint.toString(), "one two three");
 	}
 
 }
