@@ -3,6 +3,7 @@ package no.bekk.guice;
 import java.util.ArrayList;
 import java.util.List;
 
+
 public class ArrayListWrapper {
 	List<String> list = new ArrayList<String>();
 	

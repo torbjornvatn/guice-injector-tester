@@ -12,9 +12,12 @@ public class TestingModule extends AbstractModule {
 		bind(BindableClass.class).to(ClassToBind.class);
 	}
 	
-	public static Injector inject() {
-		TestingModule testingModule = new TestingModule();
-		testingModule.configure();
-		return Guice.createInjector(testingModule);
-	}
+    private static Injector injector;
+    
+    public static Injector injector() {
+        if (injector == null) {
+            injector = Guice.createInjector(new TestingModule());
+        }
+        return injector;
+    }
 }
